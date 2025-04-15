@@ -1,0 +1,365 @@
+#!/bin/bash
+# Script to create a basic web project structure for Supernova design token exports
+
+# Create main project directory
+mkdir -p DesignTokensWeb
+
+# Create the core directories for a web project
+mkdir -p DesignTokensWeb/src
+mkdir -p DesignTokensWeb/src/styles
+mkdir -p DesignTokensWeb/src/styles/tokens
+mkdir -p DesignTokensWeb/src/components
+mkdir -p DesignTokensWeb/public
+mkdir -p DesignTokensWeb/public/assets
+
+# Create basic HTML file
+cat > DesignTokensWeb/public/index.html << 'EOL'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Tokens Test</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Design Tokens Test</h1>
+        <p class="description">This page demonstrates the design tokens exported from Supernova.</p>
+        
+        <section class="token-showcase">
+            <h2>Color Tokens</h2>
+            <div class="color-grid">
+                <!-- Color tokens will be displayed here -->
+                <div class="color-item primary-bg">Primary</div>
+                <div class="color-item secondary-bg">Secondary</div>
+                <div class="color-item accent-bg">Accent</div>
+            </div>
+            
+            <h2>Typography Tokens</h2>
+            <div class="typography-samples">
+                <p class="heading-1">Heading 1</p>
+                <p class="heading-2">Heading 2</p>
+                <p class="body-text">Body Text</p>
+                <p class="caption-text">Caption Text</p>
+            </div>
+            
+            <h2>Spacing Tokens</h2>
+            <div class="spacing-samples">
+                <div class="spacing-item spacing-sm">Small</div>
+                <div class="spacing-item spacing-md">Medium</div>
+                <div class="spacing-item spacing-lg">Large</div>
+            </div>
+            
+            <h2>Radius Tokens</h2>
+            <div class="radius-samples">
+                <div class="radius-item radius-sm">Small</div>
+                <div class="radius-item radius-md">Medium</div>
+                <div class="radius-item radius-lg">Large</div>
+            </div>
+            
+            <h2>Shadow Tokens</h2>
+            <div class="shadow-samples">
+                <div class="shadow-item shadow-sm">Small</div>
+                <div class="shadow-item shadow-md">Medium</div>
+                <div class="shadow-item shadow-lg">Large</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+EOL
+
+# Create a CSS placeholder that will import the design tokens
+cat > DesignTokensWeb/public/main.css << 'EOL'
+/* Import design tokens */
+@import '../src/styles/tokens/tokens.css';
+
+/* Base styles */
+body {
+    font-family: var(--font-family-base);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+}
+
+h1 {
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--spacing-md);
+}
+
+h2 {
+    font-size: var(--font-size-xl);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.token-showcase {
+    margin-top: var(--spacing-xl);
+}
+
+/* Color examples */
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.color-item {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    color: white;
+    font-weight: bold;
+}
+
+.primary-bg {
+    background-color: var(--color-primary);
+}
+
+.secondary-bg {
+    background-color: var(--color-secondary);
+}
+
+.accent-bg {
+    background-color: var(--color-accent);
+}
+
+/* Typography examples */
+.typography-samples {
+    background-color: var(--color-surface);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.heading-1 {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-heading);
+}
+
+.heading-2 {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-heading);
+}
+
+.body-text {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-body);
+}
+
+.caption-text {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-body);
+    color: var(--color-text-secondary);
+}
+
+/* Spacing examples */
+.spacing-samples {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.spacing-item {
+    background-color: var(--color-surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+}
+
+.spacing-sm {
+    padding: var(--spacing-sm);
+}
+
+.spacing-md {
+    padding: var(--spacing-md);
+}
+
+.spacing-lg {
+    padding: var(--spacing-lg);
+}
+
+/* Radius examples */
+.radius-samples {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.radius-item {
+    background-color: var(--color-surface);
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radius-sm {
+    border-radius: var(--radius-sm);
+}
+
+.radius-md {
+    border-radius: var(--radius-md);
+}
+
+.radius-lg {
+    border-radius: var(--radius-lg);
+}
+
+/* Shadow examples */
+.shadow-samples {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.shadow-item {
+    background-color: var(--color-surface);
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+}
+
+.shadow-sm {
+    box-shadow: var(--shadow-sm);
+}
+
+.shadow-md {
+    box-shadow: var(--shadow-md);
+}
+
+.shadow-lg {
+    box-shadow: var(--shadow-lg);
+}
+EOL
+
+# Create placeholder JavaScript file
+cat > DesignTokensWeb/src/main.js << 'EOL'
+// This file could contain JavaScript for your application
+console.log('Design tokens loaded!');
+EOL
+
+# Create placeholder for the token CSS file
+mkdir -p DesignTokensWeb/src/styles/tokens
+cat > DesignTokensWeb/src/styles/tokens/placeholder.txt << 'EOL'
+This directory will contain the generated CSS token files from Supernova.
+EOL
+
+# Create a custom .supernovarc file
+cat > DesignTokensWeb/.supernovarc << 'EOL'
+{
+  "exportPaths": {
+    "css": {
+      "tokens": "./src/styles/tokens/tokens.css",
+      "colors": "./src/styles/tokens/colors.css",
+      "typography": "./src/styles/tokens/typography.css",
+      "shadows": "./src/styles/tokens/shadows.css",
+      "radius": "./src/styles/tokens/radius.css",
+      "borders": "./src/styles/tokens/borders.css",
+      "gradients": "./src/styles/tokens/gradients.css",
+      "measures": "./src/styles/tokens/measures.css"
+    }
+  }
+}
+EOL
+
+# Create README.md with instructions
+cat > DesignTokensWeb/README.md << 'EOL'
+# Design Tokens Web Test Project
+
+This is a test project for Supernova design token exports to CSS.
+
+## Structure
+
+- `/src/styles/tokens/`: This directory will contain the generated CSS files for design tokens
+- `/public/`: Contains the HTML and compiled CSS files
+- `/public/assets/`: Contains images and other static assets
+
+## Using Generated Design Tokens
+
+Once Supernova generates the CSS files, they will be placed in the `/src/styles/tokens/` directory.
+They are already being imported in the `public/main.css` file.
+
+## Testing
+
+Open the `public/index.html` file in a browser to see the design tokens in action.
+EOL
+
+# Create .gitignore
+cat > DesignTokensWeb/.gitignore << 'EOL'
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build files
+/build
+/dist
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+EOL
+
+# Create package.json for potential Node.js integration
+cat > DesignTokensWeb/package.json << 'EOL'
+{
+  "name": "design-tokens-web-test",
+  "version": "1.0.0",
+  "description": "A test project for Supernova design token exports to CSS",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo \"Add a start script to serve the project locally\""
+  },
+  "keywords": [
+    "design-tokens",
+    "css",
+    "supernova"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+EOL
+
+echo "Web project structure created successfully!"
