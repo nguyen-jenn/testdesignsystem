@@ -85,10 +85,11 @@
   --color-primary: var(--color-purple-200);
   --color-secondary: var(--color-blue-200);
   --color-background: var(--color-neutral-950);
-  --color-card: var(--color-neutral-100);
+  --color-card: var(--color-neutral-900);
   --color-accent: var(--color-magenta-200);
   --color-text: var(--color-neutral-50);
   --color-button-text: var(--color-neutral-950);
   --color-success: var(--color-green-200);
   --color-warning: var(--color-yellow-200);
+  --color-card-within-a-card: var(--color-neutral-800);
 }
