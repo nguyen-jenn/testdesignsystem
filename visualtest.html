@@ -12,7 +12,7 @@
             padding: 0;
             font-family: var(--font-family, sans-serif);
             background-color: var(--color-background, white);
-            color: var(--color-text, black);
+            color: var(--color-text);
             padding: 2rem;
             transition: all 0.3s ease;
         }
@@ -188,23 +188,23 @@
         <div class="token-section">
             <h2 class="section-title">Typography Tokens</h2>
             
-            <div class="typography-sample" style="font-size: var(--heading-1); font-weight: var(--font-weight-bold);">
+            <div class="typography-sample" style="font-size: var(--dimension-heading-1); font-weight: var(--font-weight-bold);">
                 Heading 1 (XXL Bold)
             </div>
             
-            <div class="typography-sample" style="font-size: var(--heading-2); font-weight: var(--font-weight-semibold);">
+            <div class="typography-sample" style="font-size: var(--dimension-heading-2); font-weight: var(--font-weight-semibold);">
                 Heading 2 (XL Semibold)
             </div>
             
-            <div class="typography-sample" style="font-size: var(--heading-3); font-weight: var(--font-weight-medium);">
+            <div class="typography-sample" style="font-size: var(--dimension-heading-3); font-weight: var(--font-weight-medium);">
                 Heading 3 (LG Medium)
             </div>
             
-            <div class="typography-sample" style="font-size: var(--body-text); font-weight: var(--font-weight-regular);">
+            <div class="typography-sample" style="font-size: var( --dimension-body-text); font-weight: var(--font-weight-regular);">
                 Body Text (MD Regular) - This is an example of body text using your typography tokens. It should reflect the correct font family, size, weight, and line height.
             </div>
             
-            <div class="typography-sample" style="font-size: var(--caption-text); font-weight: var(--font-weight-regular); color: var(--color-text-secondary);">
+            <div class="typography-sample" style="font-size: var(--dimension-caption-text); font-weight: var(--font-weight-regular); color: var(--color-text-secondary);">
                 Caption Text (SM Regular Secondary) - This is smaller text often used for captions, labels, or secondary information.
             </div>
         </div>
@@ -214,27 +214,27 @@
             <h2 class="section-title">Spacing Tokens</h2>
             
             <div class="spacing-showcase">
-                <div class="spacing-item" style="width: var(--spacing-xs);"></div>
+                <div class="spacing-item" style="width: var(--dimension-xs);"></div>
                 <span>XS</span>
             </div>
             
             <div class="spacing-showcase">
-                <div class="spacing-item" style="width: var(--spacing-sm);"></div>
+                <div class="spacing-item" style="width: var(--dimension-sm);"></div>
                 <span>SM</span>
             </div>
             
             <div class="spacing-showcase">
-                <div class="spacing-item" style="width: var(--spacing-md);"></div>
+                <div class="spacing-item" style="width: var(--dimension-md);"></div>
                 <span>MD</span>
             </div>
             
             <div class="spacing-showcase">
-                <div class="spacing-item" style="width: var(--spacing-lg);"></div>
+                <div class="spacing-item" style="width: var(--dimension-lg);"></div>
                 <span>LG</span>
             </div>
             
             <div class="spacing-showcase">
-                <div class="spacing-item" style="width: var(--spacing-xl);"></div>
+                <div class="spacing-item" style="width: var(--dimension-xl);"></div>
                 <span>XL</span>
             </div>
         </div>
