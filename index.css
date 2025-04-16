@@ -1,8 +1,11 @@
 /* Base tokens */
+@import "./base/dimension.css";
 @import "./base/color.css";
 
 /* Theme: Light */
+@import "./light/dimension.css";
 @import "./light/color.css";
 
 /* Theme: Dark */
+@import "./dark/dimension.css";
 @import "./dark/color.css";
