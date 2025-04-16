@@ -42,7 +42,7 @@
             border: none;
             border-radius: var(--border-radius-sm, 4px);
             background-color: var(--color-primary, blue);
-            color: var(--color-button-text);
+            color: var(--color-button-);
             cursor: pointer;
             font-size: var(--font-size-sm, 14px);
         }
@@ -79,7 +79,7 @@
             align-items: center;
             justify-content: center;
             border-radius: var(--border-radius-sm, 4px);
-            color: var(--color-button-text);
+            color: var(--color-button-);
             font-weight: var(--font-weight-bold, 700);
             box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,0.1));
         }
@@ -119,12 +119,12 @@
             font-size: var(--font-size-lg, 1.25rem);
             font-weight: var(--font-weight-semibold, 600);
             margin-bottom: var(--spacing-sm, 0.5rem);
-            color: var(--color-text, black);
+            color: var(--color-, black);
         }
 
         .card-content {
             font-size: var(--font-size-md, 1rem);
-            color: var(--color-secondary-text);
+            color: var(--color-secondary-);
             margin-bottom: var(--spacing-md, 1rem);
         }
 
@@ -132,7 +132,7 @@
             display: inline-block;
             padding: var(--spacing-sm, 0.5rem) var(--spacing-md, 1rem);
             background-color: var(--color-primary);
-            color: var(--color-button-text);
+            color: var(--color-button-);
             border: none;
             border-radius: var(--border-radius-sm, 4px);
             font-size: var(--font-size-sm, 0.875rem);
@@ -181,8 +181,8 @@
                 <div class="color-item" style="background-color: var(--color-primary);">Primary</div>
                 <div class="color-item" style="background-color: var(--color-secondary);">Secondary</div>
                 <div class="color-item" style="background-color: var(--color-accent);">Accent</div>
-                <div class="color-item" style="background-color: var(--color-background); color: var(--color-text);">Background</div>
-                <div class="color-item" style="background-color: var(--color-surface); color: var(--color-text);">Surface</div>
+                <div class="color-item" style="background-color: var(--color-background); color: var(--color-);">Background</div>
+                <div class="color-item" style="background-color: var(--color-surface); color: var(--color-);">Surface</div>
                 <div class="color-item" style="background-color: var(--color-success);">Success</div>
                 <div class="color-item" style="background-color: var(--color-warning);">Warning</div>
                 <div class="color-item" style="background-color: var(--color-error);">Error</div>
@@ -209,7 +209,7 @@
                 Body Text (MD Regular) - This is an example of body text using your typography tokens. It should reflect the correct font family, size, weight, and line height.
             </div>
             
-            <div class="typography-sample" style="font-size: var(--dimension-caption-text); font-weight: var(--font-weight-regular); color: var(--color-text-secondary);">
+            <div class="typography-sample" style="font-size: var(--dimension-caption-text); font-weight: var(--font-weight-regular); color: var(--color-text));">
                 Caption Text (SM Regular Secondary) - This is smaller text often used for captions, labels, or secondary information.
             </div>
         </div>
