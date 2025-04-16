@@ -66,4 +66,5 @@
   --color-card: var(--color-neutral-50);
   --color-accent: var(--color-magenta-700);
   --color-text: var(--color-neutral-950);
+  --color-button-text: var(--color-neutral-950);
 }
