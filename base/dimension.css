@@ -1,0 +1,17 @@
+/**
+ * This file was generated automatically by Supernova.io and should not be changed manually.
+ * To modify the format or content of this file, please contact your design system team. 
+ */
+
+:root {
+  --dimension-xs: 4px;
+  --dimension-sm: 8px;
+  --dimension-md: 16px;
+  --dimension-lg: 24px;
+  --dimension-xl: 40px;
+  --dimension-heading-1: 40px;
+  --dimension-heading-2: 24px;
+  --dimension-heading-3: 18px;
+  --dimension-body-text: 16px;
+  --dimension-caption-text: 12px;
+}

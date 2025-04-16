@@ -48,9 +48,22 @@
   --color-neutral-800: #4e4b4b;
   --color-neutral-900: #322f2f;
   --color-neutral-950: #272525;
-  --color-tertiary: var(--color-red-700);
+  --color-magenta-50: #fef6fd;
+  --color-magenta-100: #fce8f9;
+  --color-magenta-200: #fad1f4;
+  --color-magenta-300: #f6b1ec;
+  --color-magenta-400: #f28de3;
+  --color-magenta-500: #eb54d4;
+  --color-magenta-600: #e62dcb;
+  --color-magenta-700: #ce18b2;
+  --color-magenta-800: #ae1497;
+  --color-magenta-900: #800f6f;
+  --color-magenta-950: #5b0b4f;
+  --color-error: var(--color-red-700);
   --color-primary: var(--color-purple-700);
   --color-secondary: var(--color-blue-700);
   --color-background: var(--color-neutral-950);
   --color-card: var(--color-neutral-800);
+  --color-accent: var(--color-magenta-700);
+  --color-text: var(--color-neutral-50);
 }
