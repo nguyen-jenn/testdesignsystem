@@ -59,11 +59,11 @@
   --color-magenta-800: #ae1497;
   --color-magenta-900: #800f6f;
   --color-magenta-950: #5b0b4f;
-  --color-error: var(--color-red-700);
-  --color-primary: var(--color-purple-700);
-  --color-secondary: var(--color-blue-700);
+  --color-error: var(--color-red-200);
+  --color-primary: var(--color-purple-200);
+  --color-secondary: var(--color-blue-200);
   --color-background: var(--color-neutral-950);
   --color-card: var(--color-neutral-800);
-  --color-accent: var(--color-magenta-700);
-  --color-text: var(--color-neutral-50);
+  --color-accent: var(--color-magenta-200);
+  --color-text: var(--color-neutral-950);
 }
