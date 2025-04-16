@@ -59,6 +59,28 @@
   --color-magenta-800: #ae1497;
   --color-magenta-900: #800f6f;
   --color-magenta-950: #5b0b4f;
+  --color-green-50: #e9fbec;
+  --color-green-100: #d8f8dd;
+  --color-green-200: #a3f0af;
+  --color-green-300: #62e575;
+  --color-green-400: #23d23d;
+  --color-green-500: #1eb435;
+  --color-green-600: #1ba22f;
+  --color-green-700: #18902a;
+  --color-green-800: #147622;
+  --color-green-900: #0f571a;
+  --color-green-950: #093911;
+  --color-yellow-50: #fffaeb;
+  --color-yellow-100: #fff5d6;
+  --color-yellow-200: #ffecad;
+  --color-yellow-300: #ffe180;
+  --color-yellow-400: #ffd447;
+  --color-yellow-500: #ffc500;
+  --color-yellow-600: #e6b000;
+  --color-yellow-700: #cc9c00;
+  --color-yellow-800: #a88100;
+  --color-yellow-900: #7a5e00;
+  --color-yellow-950: #574200;
   --color-error: var(--color-red-700);
   --color-primary: var(--color-purple-700);
   --color-secondary: var(--color-blue-700);
@@ -66,5 +88,8 @@
   --color-card: var(--color-neutral-50);
   --color-accent: var(--color-magenta-700);
   --color-text: var(--color-neutral-950);
-  --color-button-text: var(--color-neutral-950);
+  --color-button-text: var(--color-neutral-50);
+  --color-success: var(--color-green-700);
+  --color-warning: var(--color-yellow-700);
+  --color-card-within-a-card: var(--color-neutral-100);
 }
