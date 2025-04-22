@@ -81,8 +81,10 @@
   --color-yellow-800: #a88100;
   --color-yellow-900: #7a5e00;
   --color-yellow-950: #574200;
+  --color-brand-200: #ff99bb;
+  --color-brand-700: #990033;
   --color-error: var(--color-red-200);
-  --color-primary: var(--color-blue-200);
+  --color-primary: var(--color-brand-200);
   --color-secondary: var(--color-purple-200);
   --color-background: var(--color-neutral-950);
   --color-card: var(--color-neutral-900);
