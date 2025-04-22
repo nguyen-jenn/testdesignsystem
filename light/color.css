@@ -82,8 +82,8 @@
   --color-yellow-900: #7a5e00;
   --color-yellow-950: #574200;
   --color-error: var(--color-red-700);
-  --color-primary: var(--color-purple-700);
-  --color-secondary: var(--color-blue-700);
+  --color-primary: var(--color-blue-700);
+  --color-secondary: var(--color-purple-700);
   --color-background: var(--color-neutral-100);
   --color-card: var(--color-neutral-50);
   --color-accent: var(--color-magenta-700);
